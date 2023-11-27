@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    height:100vh;
-    width:100vw;
+    width: 100vw;
+    height: 100vh;
 }
 nav{
     height: 40px;
-    width:100%;
+    width: 100%;
     display: flex;
     list-style-type: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -91,7 +91,20 @@ button{
 button:hover{
     cursor: pointer;
 }
-@media (max-width:500px){
-    height:400px;
-    width:450px;
+@media screen and (max-width:500px)
+{
+    nav{
+        width: 100%;
+    }
+    .inputvalue{
+        height: 16rem;
+        width: 25rem;
+    }
+    .sec1,.sec2
+    {
+        padding: 10px;
+    }
+    .inputvalue input[type='number'],.output,select{
+        width: 170px;
+    }
 }
